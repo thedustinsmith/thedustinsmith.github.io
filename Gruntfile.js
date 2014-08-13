@@ -39,6 +39,14 @@ module.exports = function (grunt) {
 			}
 		},
 
+		uglify: {
+			dist: {
+				files: {
+					'dist/js/all.min.js': ['<%= concat.dist.dest %>']
+				}
+			}
+		},
+
 		copy: {
 			dist: {
 				files: [
@@ -56,15 +64,7 @@ module.exports = function (grunt) {
 					cleancss: true
 				},
 				files: {
-					'dist/css/all.min.css': ['src/assets/css/**/*.css']
-				}
-			}
-		},
-
-		uglify: {
-			dist: {
-				files: {
-					'dist/js/all.min.js': ['<%= concat.dist.dest %>']
+					'dist/css/all.min.css': ['src/assets/css/all.less']
 				}
 			}
 		},

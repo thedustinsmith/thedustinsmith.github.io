@@ -1,8 +1,16 @@
-<!DOCTYPE html>	
-<html lang ="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-		<meta charset ="UTF-8" >
-		<title> Home Page </title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>DUSTIN SMITH - Home</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='http://fonts.googleapis.com/css?family=Average+Sans|Fjalla+One' rel='stylesheet' type='text/css'>
 
 		<link rel="Stylesheet" type="text/css" href="css/all.min.css" />
 		<link rel="icon" href="favicon.ico" />
@@ -11,15 +19,28 @@
 		
 
 <header>
-	<h1>The title is Home Page</h1>
+	<div class="container clearfix">
+		<h1><a href="/">Dustin Smith</a></h1>
+
+		<nav class="nav-left">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+	</nav>
+	</div>
 </header>
 
-<div class="page-container">
+<div class="page-container container">
 
 
-<h2>Welcome to my static site</h2>
-
-<blockquote>-Dustin Smith</blockquote>
+<div id="intro">
+	<h2>Hi, I'm Dustin and I'm a web developer.</h2>
+	<p class="intro">
+		I'm currently a developer at Foliotek in Columbia, Missouri.  I have full stack experience, but my passion is in the front end.  I love exploring the possibilities of Javascript.
+	</p>
+</div>
 </div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -27,14 +48,13 @@
 
 		<script type="text/javascript" src="js/all.min.js"></script>
 
-		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
 		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
 		e.src='//www.google-analytics.com/analytics.js';
 		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
+		ga('create','UA-36532208-1');ga('send','pageview');
 	</script>
 	</body>
 </html>
