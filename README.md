@@ -1,5 +1,8 @@
+Note:
+This project is different from the typical static template since <username>.github.io is published from the master branch.
+
 A project template to start a static site.
-===
+---
 
 Uses:
 * Grunt
