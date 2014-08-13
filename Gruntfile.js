@@ -7,13 +7,13 @@ module.exports = function (grunt) {
 			dev: {
 				options: {
 					port: 8000,
-					base: 'dist/'
+					base: './'
 				}
 			}
 		},
 
 		clean: {
-			all: ['dist']
+			all: ['dist', './*.html', './js', './css']
 		},
 
 		assemble: {
@@ -24,7 +24,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'dist/': ["src/pages/**/*.hbs" ]
+					'./': ["src/pages/**/*.hbs" ]
 				}
 			}
 		},
@@ -35,14 +35,14 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: ['src/assets/js/**/*.js'],
-				dest: 'dist/js/all.min.js'
+				dest: './js/all.min.js'
 			}
 		},
 
 		uglify: {
 			dist: {
 				files: {
-					'dist/js/all.min.js': ['<%= concat.dist.dest %>']
+					'js/all.min.js': ['<%= concat.dist.dest %>']
 				}
 			}
 		},
@@ -50,8 +50,8 @@ module.exports = function (grunt) {
 		copy: {
 			dist: {
 				files: [
-					{ expand: true, flatten: true, src: 'src/assets/static/js/**', dest: 'dist/js/', filter: 'isFile' },
-					{ expand: true, flatten: true, src: 'src/assets/static/*.*', dest: 'dist/' }
+					{ expand: true, flatten: true, src: 'src/assets/static/js/**', dest: './js/', filter: 'isFile' },
+					{ expand: true, flatten: true, src: 'src/assets/static/*.*', dest: './' }
 
 				]
 			}
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 					cleancss: true
 				},
 				files: {
-					'dist/css/all.min.css': ['src/assets/css/all.less']
+					'./css/all.min.css': ['src/assets/css/all.less']
 				}
 			}
 		},
