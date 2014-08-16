@@ -1,85 +1,171 @@
+/* Global Styles */
+@green: rgb(27, 131, 60);
 
 body {
-    font-family: 'Average Sans', sans-serif;
-    color: #333;
+		font-family: 'Average Sans', sans-serif;
+		color: #333;
+}
+::selection {
+	background: rgb(40, 192, 58);
+	color: #222;
+}
+::-moz-selection {
+	background: rgb(40, 192, 58);
+	color: #222;
 }
 .container {
-    width: 95%;
-    margin: 0 auto;
+		width: 95%;
+		margin: 0 auto;
 }
 a {
-    color: rgb(27, 131, 60);
+		color: @green;
 }
 header {
-    border-top: 3px solid rgb(27, 131, 60);
-    border-bottom: 1px solid #f8f8f8;
-    box-shadow: 0 0 5px 5px rgba(224, 224, 224, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background: white;
+		border-top: 3px solid @green;
+		border-bottom: 1px solid #f8f8f8;
+		box-shadow: 0 0 5px 5px rgba(224, 224, 224, 0.8);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 80px;
+		background: white;
+		overflow: hidden;
 }
 header h1 {
-    font-family: 'Fjalla One', sans-serif;
-    padding: 13px 0 10px 0;
-    margin: 0;
-    display: inline-block;
-    font-size: 44px;
+		font-family: 'Fjalla One', sans-serif;
+		padding: 13px 0 10px 0;
+		margin: 0;
+		display: inline-block;
+		font-size: 44px;
+		letter-spacing: -2px;
 }
 header h1 a {
-    color: #333;
-    text-decoration: none;
+		color: #333;
+		text-decoration: none;
 }
 header nav {
-    display: inline-block;
+		display: inline-block;
 }
 header nav ul {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
+		margin: 0;
+		padding: 0;
+		margin-left: 20px;
 }
 header nav li {
-    display: inline-block;
-    margin-right: 15px;
+		display: inline-block;
+		margin-right: 15px;
 }
 header nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
+		text-decoration: none;
+		font-size: 16px;
+		padding: 5px;
+		display: inline-block;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			border-bottom: 2px solid @green;
+			.transition(all .2s linear);
+			opacity: 0;
+		}
+
+		&:before {
+			top: -100px;
+		}
+
+		&:after {
+			bottom: -50px;
+		}
+
+		&:hover{
+			&:after {
+				bottom: 0;
+				opacity: 1;
+			}
+			&:before {
+				opacity: 1;
+				top: 0;
+			}
+		}
 }
 .page-container {
-    padding-top: 110px;
+		padding-top: 110px;
 }
-
-#intro {
-    text-align: center;
-}
-
 h2 {
-    font-size: 44px;
+		font-size: 44px;
 }
 h3 {
-    font-size: 18px;
-    color: #0D3F1D;
-    font-family: 'Fjalla One', sans-serif;
+		font-size: 18px;
+		color: #0D3F1D;
+		font-family: 'Fjalla One', sans-serif;
 }
 h4 {
-    font-size: 14px;
+		font-size: 14px;
 }
 
+/* End Global Styles */
+
+/* Page Specific */
+
+/* Intro */
+#intro {
+		text-align: center;
+
+		h2 {
+			margin: 0;
+		}
+		p {
+			margin-top: 0;
+		}
+}
+#passions {
+	display: inline-block;
+	color: @green;
+	position: relative;
+	height: 100px;
+	width: 300px;
+	overflow: hidden;
+	line-height: 87px;
+	vertical-align: middle;
+	.transition(width .2s ease-out);
+
+	span {
+		display: block;
+		position: absolute;
+		white-space: nowrap;
+		.transition(top .5s ease-out);
+
+		&.before {
+			top: -100px;
+		}
+		&.current {
+			top: 0;
+		}
+		&.after {
+			top: 100px;
+		}
+	}
+}
+/* End Intro */
+
+/* Projects */
 .projects article {
-    margin-bottom: 25px;
+		margin-bottom: 25px;
 }
 .projects article img {
-    width: 200px;
-    float: left;
-    margin-right: 30px;
+		width: 200px;
+		float: left;
+		margin-right: 30px;
 }
 .projects article h3 {
-    margin: 0;
+		margin: 0;
 }
 .projects article p {
 
 }
+/* End Projects */

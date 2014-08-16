@@ -3,8 +3,21 @@ title: 'Home'
 ---
 
 <div id="intro">
-	<h2>Hi, I'm Dustin and I'm a web developer.</h2>
+	<h2>Hi, I'm Dustin and I'm <span class="a-an">a</span>
+		<div id="passions">
+			<span class="current">Web Developer</span>
+			<span class="before">Kayaker</span>
+			<span class="after">Boat Builder</span>
+		</div>.
+	</h2>
 	<p class="intro">
-		I'm currently a developer at Foliotek in Columbia, Missouri.  I have full stack experience, but my passion is in the front end.  I love exploring the possibilities of Javascript.
+		I'm currently a developer at Foliotek in Columbia, Missouri.  I have full stack experience, but my passion is in the front end.  I love exploring the possibilities of Javascript.  As you can see above, I have several other hobbies.
 	</p>
 </div>
+
+<script>
+window.onload = function() {
+	log('here');
+	Intro.init();
+};
+</script>
