@@ -10,3 +10,15 @@
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
+
+.clearfix () {
+	&:before,
+	&:after {
+		content: " "; 
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
