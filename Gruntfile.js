@@ -18,9 +18,9 @@ module.exports = function (grunt) {
 
 		assemble: {
 			options: {
-				layout: 'page.hbs',
-				layoutdir: 'src/layouts/',
-				flatten: true
+				flatten: true,
+				layout: false,
+				partials: ['src/layouts/**/*.hbs'],
 			},
 			dist: {
 				files: {

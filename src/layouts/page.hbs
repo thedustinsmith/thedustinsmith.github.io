@@ -1,7 +1,5 @@
----
-layout: base.hbs
----
-
+{{#extend "base"}}
+{{#content "body"}}
 <header>
 	<div class="container clearfix">
 		<h1><a href="/">Dustin Smith</a></h1>
@@ -17,5 +15,9 @@ layout: base.hbs
 </header>
 
 <div class="page-container container">
-{{> body }}
+	{{#block "content"}}
+	{{/block}}
 </div>
+{{/content}}
+	{{#block "scripts" mode="append"}}{{/block}}
+{{/extend}}

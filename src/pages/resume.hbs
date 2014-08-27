@@ -1,9 +1,9 @@
 ---
 title: "Dustin Smith's Resume"
-layout: base.hbs
 omitScripts: true
 ---
-
+{{#extend "base"}}
+{{#content "body"}}
 <div id="resume">
 	<h1>Dustin Smith</h1>
 
@@ -58,3 +58,5 @@ omitScripts: true
 	</section>
 
 </div>
+{{/content}}
+{{/extend}}
