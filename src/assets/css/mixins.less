@@ -22,3 +22,17 @@
 		clear: both;
 	}
 }
+
+.transform (@params) {
+				transform: @params;
+-webkit-transform: @params;
+	 -moz-transform: @params;
+		-ms-transform: @params;
+}
+
+.transitionTransform (@params) {
+				transition: transform @params;
+-webkit-transition: -webkit-transform @params;
+	 -moz-transition: -moz-transform @params;
+		-ms-transition: -ms-ransform @params;
+}
