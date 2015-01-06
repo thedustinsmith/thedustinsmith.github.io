@@ -3,18 +3,30 @@
     margin: 0;
     font-weight: 300;
     font-size: 42px;
+    display: inline-block;
   }
   .post-meta {
     margin-top: 0;
-    color: #999;
-    font-size: 14px;
+    color: #bbb;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 15px;
   }
   h2 a {
     text-decoration: none;
     font-weight: 300;
     font-size: 28px;
     display: inline-block;
-    border-bottom: 1px solid;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid;
+    }
   }
 }
 ol,ul li {
@@ -27,8 +39,20 @@ ol,ul li {
   img {
     border: 2px solid #ddd;
   }
+}
+.post .post-header {
+  h2.post-title {
+    display: inline-block;
 
+    a {
 
+    }
+  }
+  .post-date {
+    display: inline-block;
+    padding-left: 10px;
+    color: #bbb;
+  }
 }
 footer.post-meta {
   img.author-thumb {
@@ -76,4 +100,35 @@ footer.post-footer {
       text-transform: lowercase;
     }
   }
+}
+
+.share {
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 13px;
+  }
+  .fa {
+    font-size: 36px;
+    text-decoration: none;
+    display: inline-block;
+    color: #539468;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+nav.pagination {
+  text-align: center;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 25px;
 }
