@@ -92,6 +92,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('assemble');
 	grunt.loadNpmTasks('grunt-newer');
 
+	var cmds =  ['clean', 'copy', 'concat', 'uglify', 'less', 'assemble', 'connect'];
+	if (!grunt.option('no-watch')) {
+		cmds.push('watch');
+	}
 	/* grunt tasks */
-	grunt.registerTask('default', ['clean', 'copy', 'concat', 'uglify', 'less', 'assemble', 'connect', 'watch']);
+	grunt.registerTask('default', cmds);
 };

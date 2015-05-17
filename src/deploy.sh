@@ -1,5 +1,5 @@
 #!/bin/bash
-grunt
+grunt --no-watch
 (
  git init
  git config user.name "${GIT_NAME}"
