@@ -4,9 +4,6 @@
   "description": "A static template to start static sites from",
   "author": "Dustin Smith",
   "license": "ISC",
-  "scripts": {
-    "deploy": "./src/deploy.sh"
-  },
   "dependencies": {},
   "devDependencies": {
     "assemble": "0.4.41",
