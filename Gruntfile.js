@@ -51,6 +51,7 @@ module.exports = function (grunt) {
 			dist: {
 				files: [
 					{ expand: true, flatten: true, src: 'src/assets/static/js/**', dest: './js/', filter: 'isFile' },
+					{ expand: true, flatten: true, src: 'src/assets/static/img/**', dest: './img/', filter: 'isFile' },
 					{ expand: true, flatten: true, src: 'src/assets/static/*.*', dest: './' }
 
 				]
