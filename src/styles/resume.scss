@@ -1,0 +1,142 @@
+#resume {
+    width: 600px;
+    box-shadow: 0 0 5px #555;
+    margin: 0 auto;
+    min-height: 100%;
+    font-size: 14px;
+
+    a,
+    a:hover,
+    a:visited {
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 48px;
+        margin: 0;
+        padding: 15px;
+
+        a { 
+            text-decoration: none;
+        }
+    }
+
+    .gray-header {
+        background: #eee;
+        padding: 5px 10px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        // .clearfix();
+
+        margin-bottom: 10px;
+        padding: 0 10px;
+        font-size: 12px;
+        a {
+                color: #555;
+        }
+        .email {
+            align-self: flex-start;
+        }
+        .phone {
+            align-self: flex-end;
+        }
+    }
+
+    section {
+        padding-bottom: 10px;
+    }
+
+    section h2 {
+        text-align: right;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #666;
+    }
+
+    .entry {
+        padding: 10px;
+
+        h3 {
+            font-size: 16px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 5px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -2px;
+                border-bottom: 1px dotted #ccc;
+            }
+
+            .dates {
+                display: inline-block;
+                float: right;
+                font-size: 11px;
+                padding-top: 3px;
+                color: #666;
+
+                em {
+                    font-style: normal;
+                }
+            }
+        }
+
+        .sub-header {
+            color: #aaa;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        p.description {
+            margin: 10px 15px 10px 25px;
+            color: #555;
+        }
+    }
+
+    .skill {
+        padding: 10px;
+
+        label,
+        .bar {
+            display: inline-block;
+        }
+
+        label {
+            width: 125px;
+        }
+
+        .bar {
+            color: #fff;
+            text-align: right;
+            padding: 3px 10px 3px 0;
+            font-size: 11px;
+        }
+
+        .b1 { background-color: $green;}
+        .b2 {background-color: saturate($green, 50%);}
+        .b3 {background-color: lighten($green, 10%);}
+        .b4 {background-color: darken($green, 10%);}
+
+        .bar-2 {
+            width: 100px;
+        }
+        .bar-5 {
+            width: 250px;
+        }
+        .bar-10 {
+            width: 400px;
+            background: darken($green, 20%);
+        }
+
+    }
+}
