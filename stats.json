@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
     "component---src-layouts-bare-js": [
-      "component---src-layouts-bare-js-565faffef79d34127092.js",
-      "component---src-layouts-bare-js-565faffef79d34127092.js.map"
+      "component---src-layouts-bare-js-f8131ffbe4edd30b1275.js",
+      "component---src-layouts-bare-js-f8131ffbe4edd30b1275.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-f46ce0fc5fe5ba89e322.js",
-      "component---src-pages-index-js-f46ce0fc5fe5ba89e322.js.map"
+      "component---src-pages-index-js-f5aa2bbe683150352ef9.js",
+      "component---src-pages-index-js-f5aa2bbe683150352ef9.js.map"
     ],
     "path---": [
       "path----131f9aef94525eeb6ecd.js",
@@ -29,8 +29,8 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-resume-js": [
-      "component---src-pages-resume-js-fa1d28a23e6c0024acf7.js",
-      "component---src-pages-resume-js-fa1d28a23e6c0024acf7.js.map"
+      "component---src-pages-resume-js-0869aad21faf2b8e849d.js",
+      "component---src-pages-resume-js-0869aad21faf2b8e849d.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -61,12 +61,12 @@
       "path---resume-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-fdf644f2e028ba3f4588.js",
-      "app-fdf644f2e028ba3f4588.js.map"
+      "app-92444528f0008bfd9159.js",
+      "app-92444528f0008bfd9159.js.map"
     ],
     "component---src-pages-portfolio-js": [
-      "component---src-pages-portfolio-js-b9a7f66b66165fdaafa1.js",
-      "component---src-pages-portfolio-js-b9a7f66b66165fdaafa1.js.map"
+      "component---src-pages-portfolio-js-4838720968113709ee64.js",
+      "component---src-pages-portfolio-js-4838720968113709ee64.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
