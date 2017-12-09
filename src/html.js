@@ -25,22 +25,23 @@ class Html extends Component {
               <head>
                 {this.props.headComponents}
       
+                <meta name="description" content="Dustin Smith is a full stack web developer in Kansas City, Missouri" />
                 <meta name="referrer" content="origin" />
                 <meta charSet="utf-8" />
-                <meta
+                {/* <meta
                   name="description"
                   content="Dustin Smith - Web Developer"
-                />
+                /> */}
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                   name="viewport"
                   content="width=device-width, initial-scale=1.0"
                 />
-                <title>{this.props.title} - Dustin Smith</title>
-                <link href='http://fonts.googleapis.com/css?family=Average+Sans|Fjalla+One' rel='stylesheet' type='text/css' />
+                {/* <title>{this.props.title} - Dustin Smith</title> */}
+                <link href="http://fonts.googleapis.com/css?family=Average+Sans|Fjalla+One" rel="stylesheet" type="text/css" />
                 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
                 <link rel="icon" href={favicon} />
-                {css}
+                <style>{css}</style>
               </head>
               <body>
                 <div

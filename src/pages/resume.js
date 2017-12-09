@@ -1,8 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 const ResumePage = () => (
     <div id="resume">
+      <Helmet 
+            title="Resume | Dustin Smith"
+        />
         <h1><Link to="/">Dustin Smith</Link></h1>
 
         <div className="contact">
@@ -32,15 +36,15 @@ const ResumePage = () => (
 
             <div className="skill">
                 <label>Javascript</label>
-                <div className="bar bar-5 b1">5+ years</div>
+                <div className="bar bar-5 b1">7+ years</div>
             </div>
             <div className="skill">
                 <label>C# MVC/WebForms</label>
-                <div className="bar bar-5 b2">5+ years</div>
+                <div className="bar bar-5 b2">7+ years</div>
             </div>
             <div className="skill">
                 <label>NodeJS</label>
-                <div className="bar bar-2 b3">2+ years</div>
+                <div className="bar bar-2 b3">4+ years</div>
             </div>
             <div className="skill">
                 <label>Html/CSS</label>
@@ -51,9 +55,18 @@ const ResumePage = () => (
         <section className="awards">
             <h2 className="gray-header">Awards</h2>
             <div className="entry">
+                <h3>StaticShowdown 2016 <span className="dates">February 2016</span></h3>
+                <span className="sub-header">Best Team Entry</span>
+                <p className="description">My teammate and I built a collaborative puzzle game.  
+                You could upload your own image, our website would break it into puzzle pieces, 
+                and then one or more browsers could connect and assemble the puzzle together.</p>
+            </div>
+            <div className="entry">
                 <h3>NodeKnockout 2014 <span className="dates">November 2014</span></h3>
                 <span className="sub-header">Top 20</span>
                 <p className="description">My team built a mosaic generator using bleeding edge HTML5 features of javascript, and used Node as our backend to share mosaics, and use other people's images to help create your mosaic.  It's not in current development anymore, but you can find it at <a href="http://www.imgzaic.com" target="_blank">www.imgzaic.com</a>.</p>
+                <span className="sub-header">Source:&nbsp;</span>
+                <a href="https://github.com/thedustinsmith/nodezaic">Github</a>
             </div>
         </section>
     </div>
